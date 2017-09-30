@@ -2,6 +2,8 @@ import React from "react"
 import g from "glamorous"
 import Link from "gatsby-link"
 
+import Counter from "../components/counter"
+
 import { rhythm } from "../utils/typography"
 
 export default ({ data }) => {
@@ -9,7 +11,7 @@ export default ({ data }) => {
     return (
         <div>
             <g.H1 display={"inline-block"} borderBottom={"1px solid"}>
-                Amazing Pandas Eating Things
+                Panda Posts
             </g.H1>
             <h4>
                 {data.allMarkdownRemark.totalCount} Posts
@@ -37,6 +39,7 @@ export default ({ data }) => {
 export const query = graphql`
 query IndexQuery{
   allMarkdownRemark(sort: {fields: [frontmatter___date], order: DESC}) {
+    totalCount
     edges {
       node {
           id

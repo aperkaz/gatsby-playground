@@ -15,6 +15,7 @@
     "gatsby-source-filesystem": "^1.5.1",
     "gatsby-transformer-remark": "^1.7.12",
     "glamorous": "^4.9.7",
-    "typography-theme-kirkham": "^0.16.3"
+    "typography-theme-kirkham": "^0.16.3",
+    "typography-theme-moraga": "^0.15.10"
   }
 }
